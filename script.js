@@ -53,9 +53,7 @@ const showData = (data) => {
         <img class="w-14 pl-3" src="${val.image}"/>
         <p class="pl-3 mt-2">${val.name}</p>
         </td>
-        <td class=" p-1 border-gray-500">${val.symbol.toFixed(2)}$</td>
         <td class=" p-1 border-gray-500">${val.current_price.toFixed(2)}$</td>
-        <td class=" p-1 border-gray-500">${val.total_volume.toFixed(2)}$</td>
         <td class=" p-1 border-gray-500">${allprofit > 0 ? `<span class="text-green-700">${allprofit}%</span>` : `<span class="text-red-600">${allprofit}%</span>`}</td>
         <td class=" p-1 border-gray-500">${val.market_cap.toString().slice(0, -6)}M</td>
     </tr>`;
@@ -113,11 +111,8 @@ const showModal = (data, cprize) => {
                     <thead class="">
                         <tr class="shadow-sm shadow-gray-700">
                             <th class="p-3">coin</th>
-                            <th class="p-3">Symbol</th>
-                            <th class="p-3"> Current Price</th>
+                            
                             <th class="p-3">market</th>
-                            <th class="p-3">% change</th>
-
                             <th class="p-3">link</th>
                         </tr>
                     </thead>
