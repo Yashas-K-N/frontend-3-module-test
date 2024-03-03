@@ -1,3 +1,11 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 .modal-all-content{
     max-height: 500px;
     transform: translateY(-60px);
@@ -35,4 +43,19 @@
     background-color:black;
     color:white
 
+}
+
+
+@media all and (max-width:700px) {
+
+    .modal-all-content{
+        flex-wrap: wrap;
+        display: block;
+    }
+     
+
+    
+
+
+    
 }
